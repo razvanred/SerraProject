@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name" translatable="false">SerraProject</string>
+    <string name="preference_ip_key" translatable="false">com.razvanprojects.IP_KEY</string>
+    <string name="server_ip_address">Server IP Address</string>
+    <string name="ip_not_set">No IP address is already saved</string>
+    <string name="ip_address">IP Address</string>
+    <string name="ip_not_valid">Invalid IP Address</string>
+    <string name="room_d">Room %d</string>
+    <string name="change_ip">Change IP Address</string>
+</resources>

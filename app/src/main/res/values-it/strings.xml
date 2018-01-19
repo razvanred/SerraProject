@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="server_ip_address">Indirizzo IP del server</string>
+    <string name="ip_not_set">Nessun indirizzo IP è stato ancora salvato</string>
+    <string name="ip_address">Indirizzo IP</string>
+    <string name="ip_not_valid">Indirizzo IP non valido</string>
+    <string name="room_d">Stanza %d</string>
+    <string name="change_ip">Cambia indirizzo IP</string>
+</resources>
