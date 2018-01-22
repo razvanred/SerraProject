@@ -7,4 +7,8 @@
     <string name="ip_not_valid">Invalid IP Address</string>
     <string name="room_d">Room %d</string>
     <string name="change_ip">Change IP Address</string>
+    <string name="temperature">Temperature</string>
+    <string name="light">Light</string>
+    <string name="success_message">The message has been sent successfully</string>
+    <string name="humidity">Humidity</string>
 </resources>

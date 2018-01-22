@@ -6,4 +6,8 @@
     <string name="ip_not_valid">Indirizzo IP non valido</string>
     <string name="room_d">Stanza %d</string>
     <string name="change_ip">Cambia indirizzo IP</string>
+    <string name="success_message">Il messaggio è stato inviato con successo</string>
+    <string name="temperature">Temperatura</string>
+    <string name="humidity">Umidità</string>
+    <string name="light">Luce</string>
 </resources>

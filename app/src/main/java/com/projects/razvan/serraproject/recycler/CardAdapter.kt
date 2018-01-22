@@ -5,11 +5,10 @@ import android.support.v7.widget.CardView
 import android.support.v7.widget.RecyclerView
 import android.view.LayoutInflater
 import android.view.ViewGroup
-import android.widget.SeekBar
-import android.widget.TextView
+import android.widget.*
 import com.projects.razvan.serraproject.R
-import android.widget.Toast
 import android.widget.SeekBar.OnSeekBarChangeListener
+import com.projects.razvan.serraproject.Control
 
 
 /**
@@ -24,8 +23,17 @@ class CardAdapter(private val context: Context) : RecyclerView.Adapter<ViewHolde
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         // holder.setIsRecyclable(false)
         // cursor.moveToPosition(position)
-        val txv = holder.layout.findViewById<TextView>(R.id.txvNumSlider)
-        holder.layout.findViewById<TextView>(R.id.txvRoom).text = context.getString(R.string.room_d, position + 1)
+
+        val control=Control.values()[position]
+
+        holder.layout.tag = position
+        holder.layout.findViewById<ImageView>(R.id.icon).setImageResource(control.icon)
+        holder.layout.findViewById<TextView>(R.id.txvRoom).text=context.getString(control.description)
+        holder.layout.findViewById<SeekBar>(R.id.seekBar).max=control.maxValue
+
+        val txv=holder.layout.findViewById<TextView>(R.id.txvNumSlider)
+
+        //holder.layout.layoutParams= LinearLayout.LayoutParams(LinearLayout.LayoutParams.MATCH_PARENT, LinearLayout.LayoutParams.WRAP_CONTENT)
 
         holder.layout.findViewById<SeekBar>(R.id.seekBar).setOnSeekBarChangeListener(object : OnSeekBarChangeListener {
 
@@ -50,6 +58,6 @@ class CardAdapter(private val context: Context) : RecyclerView.Adapter<ViewHolde
     }
 
     override fun getItemCount(): Int {
-        return 8
+        return Control.values().size
     }
 }

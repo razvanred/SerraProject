@@ -6,7 +6,8 @@
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
     android:layout_margin="10dp"
-    app:cardElevation="5dp">
+    app:cardElevation="5dp"
+    android:id="@+id/cardView">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -19,11 +20,17 @@
             android:layout_height="wrap_content"
             android:padding="10dp">
 
+            <ImageView
+                android:id="@+id/icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"/>
+
             <TextView
                 android:id="@+id/txvRoom"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_alignParentStart="true"
+                android:layout_toEndOf="@id/icon"
                 android:textAppearance="@android:style/TextAppearance.DeviceDefault.Medium" />
 
             <TextView
@@ -40,7 +47,6 @@
             android:id="@+id/seekBar"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:max="255"
             android:progress="0" />
 
     </LinearLayout>
