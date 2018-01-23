@@ -5,8 +5,8 @@
     tools:context=".MainActivity">
 
     <item
-        android:id="@+id/actChangeIP"
-        android:title="@string/change_ip"
+        android:id="@+id/actConfigServer"
+        android:title="@string/change_config_server"
         app:showAsAction="never" />
 
 

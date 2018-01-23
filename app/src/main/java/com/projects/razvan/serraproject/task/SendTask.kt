@@ -9,7 +9,7 @@ import java.net.InetAddress
 /**
  * Created by Razvan on 1/20/2018.
  */
-class SocketTask(val address: InetAddress,val PORT:Int): AsyncTask<Byte,Void,Int>() {
+class SendTask(private val address: InetAddress, private val PORT: Int) : AsyncTask<Byte, Void, Int>() {
 
     private val socket:DatagramSocket = DatagramSocket()
 

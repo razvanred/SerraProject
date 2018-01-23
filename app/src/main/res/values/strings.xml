@@ -1,14 +1,18 @@
 <resources>
     <string name="app_name" translatable="false">SerraProject</string>
     <string name="preference_ip_key" translatable="false">com.razvanprojects.IP_KEY</string>
-    <string name="server_ip_address">Server IP Address</string>
+    <string name="preference_port_key" translatable="false">com.razvanprojects.PORT_KEY</string>
     <string name="ip_not_set">No IP address is already saved</string>
+    <string name="port_not_set">No port is already saved</string>
     <string name="ip_address">IP Address</string>
     <string name="ip_not_valid">Invalid IP Address</string>
     <string name="room_d">Room %d</string>
-    <string name="change_ip">Change IP Address</string>
+    <string name="change_config_server">Change server configuration</string>
     <string name="temperature">Temperature</string>
     <string name="light">Light</string>
     <string name="success_message">The message has been sent successfully</string>
     <string name="humidity">Humidity</string>
+    <string name="port">Port</string>
+    <string name="port_range">The allowed range of the port is between %d and %d</string>
+    <string name="fill_field">You must fill this field</string>
 </resources>

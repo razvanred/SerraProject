@@ -2,6 +2,7 @@
 <resources>
     <string name="server_ip_address">Indirizzo IP del server</string>
     <string name="ip_not_set">Nessun indirizzo IP è stato ancora salvato</string>
+    <string name="port_not_set">Nessuna porta è stata ancora salvata</string>
     <string name="ip_address">Indirizzo IP</string>
     <string name="ip_not_valid">Indirizzo IP non valido</string>
     <string name="room_d">Stanza %d</string>
@@ -10,4 +11,8 @@
     <string name="temperature">Temperatura</string>
     <string name="humidity">Umidità</string>
     <string name="light">Luce</string>
+    <string name="port">Porta</string>
+    <string name="change_config_server">Configura server</string>
+    <string name="port_range">Il valore della porta deve essere compreso tra %d e %d</string>
+    <string name="fill_field">Devi compilare questo campo</string>
 </resources>
